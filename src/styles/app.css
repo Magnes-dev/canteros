@@ -1,0 +1,28 @@
+:root {
+    --background: #333333;
+    --primary-fonts: white;
+    --marron-cantero: #8b1818;
+    --amarillo-cantero: #bea70b;
+    --morado-cantero: #993366;
+    --azul-cantero: #224477;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--background);
+    color: var(--primary-fonts);
+    text-align: center;
+}
+
+header {
+    background-color: var(--marron-cantero);
+    color: var(--amarillo-cantero);
+    margin: 0;
+    padding: 0;
+}
+
+header h1 {
+    margin: 0;
+    padding: 1em 0;
+}
