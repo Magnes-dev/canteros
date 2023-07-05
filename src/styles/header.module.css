@@ -1,0 +1,14 @@
+@import 'variables.css';
+
+header h1 {
+    margin: 0;
+    padding-bottom: .5em;
+    font-size: 2.5em;
+    font-family: 'Gloria Hallelujah', cursive;
+    text-shadow: 2px 2px black;
+}
+
+header img {
+    max-height: 5em;
+    padding-top: 1em;
+}

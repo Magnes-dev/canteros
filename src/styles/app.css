@@ -1,28 +1,39 @@
-:root {
-    --background: #333333;
-    --primary-fonts: white;
-    --marron-cantero: #8b1818;
-    --amarillo-cantero: #bea70b;
-    --morado-cantero: #993366;
-    --azul-cantero: #224477;
-}
+@import 'variables.css';
 
-html, body {
+*, *:before, *:after {
+    box-sizing: border-box;    
+  }
+
+body {
     margin: 0;
     padding: 0;
     background-color: var(--background);
-    color: var(--primary-fonts);
-    text-align: center;
-}
-
-header {
-    background-color: var(--marron-cantero);
     color: var(--amarillo-cantero);
-    margin: 0;
-    padding: 0;
+    text-align: center;
+    font-family: 'Belanosima', sans-serif;
+    padding-bottom: 6em;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    min-height: 100vh;
 }
 
-header h1 {
-    margin: 0;
-    padding: 1em 0;
+.footer-header {
+    background-color: var(--morado-cantero);
+    color: var(--amarillo-cantero);
+    border: 5px solid var(--marron-cantero);
+    box-shadow: inset 0px 0px 30px var(--marron-cantero);
+    border-radius: 10px;
+}
+
+.flex {
+    display: flex;
+}
+
+.column {
+    flex-direction: column;
+}
+
+.row {
+    flex-direction: row;
 }

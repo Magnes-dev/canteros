@@ -1,0 +1,6 @@
+@import 'variables.css';
+
+#lider {
+    max-height: 20em;
+    padding: 2em;
+}
