@@ -4,6 +4,7 @@ import {BrowserRouter, Routes, Route} from "react-router-dom";
 import Layout from './pages/layout';
 import Home from './pages/home';
 import NotFound from './pages/notFound';
+import Eventos from './pages/eventos';
 import './styles/app.css';
 
 export default function App() {
@@ -12,6 +13,7 @@ export default function App() {
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
+          <Route path='eventos' element={<Eventos />} />
           <Route path="*" element={<NotFound />} />
         </Route>
       </Routes>

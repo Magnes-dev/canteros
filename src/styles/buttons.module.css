@@ -1,0 +1,19 @@
+.botonera button,
+.botonera a {
+    padding: .5em;
+    border: 3px solid var(--marron-cantero);
+    border-radius: 5px;
+    font-family:'Belanosima', sans-serif;
+    color: var(--amarillo-cantero);
+    text-shadow: 1px 1px black;
+    font-size: 1.2em;
+    text-decoration: none;
+}
+
+.botonAzul {
+    background-color: var(--azul-cantero);
+}
+
+.botonMorado {
+    background-color: var(--morado-cantero);
+}
