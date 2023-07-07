@@ -1,0 +1,13 @@
+.formAgregar {
+    border: 1px solid black;
+}
+
+.formAgregar input {
+    padding: .5em;
+    border: 2px solid var(--marron-cantero);
+    border-radius: 5px;
+}
+
+.formAgregar label {
+    padding: .5em;
+}

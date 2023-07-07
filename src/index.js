@@ -5,6 +5,7 @@ import Layout from './pages/layout';
 import Home from './pages/home';
 import NotFound from './pages/notFound';
 import Eventos from './pages/eventos';
+import Admin from './pages/admin';
 import './styles/app.css';
 
 export default function App() {
@@ -14,6 +15,7 @@ export default function App() {
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
           <Route path='eventos' element={<Eventos />} />
+          <Route path='admin' element ={<Admin />} />
           <Route path="*" element={<NotFound />} />
         </Route>
       </Routes>

@@ -1,7 +1,8 @@
 import React from 'react';
 import styles from '../styles/proximo-evento.module.css';
+import button from '../styles/buttons.module.css';
 
-function ProximoEvento() {
+function Evento() {
     return (
         <div class="flex column">
             <table className={styles.evento}>
@@ -19,8 +20,9 @@ function ProximoEvento() {
                     <td><span>1</span> miembros asisten</td>
                 </tr>
             </table>
+            <button type="button" className={button.botonAzul}>Apuntarme</button>
         </div>
     )
 }
 
-export default ProximoEvento;
+export default Evento;

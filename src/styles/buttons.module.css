@@ -1,13 +1,13 @@
-.botonera button,
-.botonera a {
-    padding: .5em;
-    border: 3px solid var(--marron-cantero);
+button, a {
+    padding: .7em;
+    border: none;
     border-radius: 5px;
     font-family:'Belanosima', sans-serif;
     color: var(--amarillo-cantero);
     text-shadow: 1px 1px black;
     font-size: 1.2em;
     text-decoration: none;
+    margin: .5em;
 }
 
 .botonAzul {

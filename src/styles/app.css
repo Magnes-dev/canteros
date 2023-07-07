@@ -12,10 +12,7 @@ body {
     color: var(--azul-cantero);
     text-align: center;
     font-family: 'Belanosima', sans-serif;
-    font-size: 1.2em;
     padding-bottom: 7em;
-    display: flex;
-    flex-direction: column;
     position: relative;
     min-height: 100vh;
 }
@@ -23,9 +20,9 @@ body {
 .footer-header {
     background-color: var(--morado-cantero);
     color: var(--amarillo-cantero);
-    border: 5px solid var(--marron-cantero);
     box-shadow: inset 0px 0px 30px var(--marron-cantero);
-    border-radius: 10px;
+    border-radius: 10px 60px 30px 80px;
+    margin: .5em;
 }
 
 .flex {

@@ -4,6 +4,6 @@ footer {
     position: absolute;
     bottom: 0;
     max-height: 6em;
-    width: 100%;
+    width: calc(100vw - 1em);
     text-shadow: 1px 1px black;
 }

@@ -1,7 +1,5 @@
-@import 'variables.css';
-
-#lider {
-    max-height: 15em;
+#image {
+    max-height: 12em;
     padding: 2em;
 }
 
