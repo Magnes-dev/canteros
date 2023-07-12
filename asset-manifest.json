@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/canteros/static/css/main.1040897f.css",
-    "main.js": "/canteros/static/js/main.ef3037b3.js",
+    "main.js": "/canteros/static/js/main.e0bfca05.js",
     "static/media/logia.png": "/canteros/static/media/logia.8cf4afee4a7b3384e5dd.png",
     "static/media/eye.png": "/canteros/static/media/eye.96d22bfcb96b57f149d5.png",
     "static/media/money-pool.png": "/canteros/static/media/money-pool.1d8589f17ad2a823257a.png",
@@ -15,10 +15,10 @@
     "static/media/lider.png": "/canteros/static/media/lider.7e88f6e7f34e79c5da27.png",
     "index.html": "/canteros/index.html",
     "main.1040897f.css.map": "/canteros/static/css/main.1040897f.css.map",
-    "main.ef3037b3.js.map": "/canteros/static/js/main.ef3037b3.js.map"
+    "main.e0bfca05.js.map": "/canteros/static/js/main.e0bfca05.js.map"
   },
   "entrypoints": [
     "static/css/main.1040897f.css",
-    "static/js/main.ef3037b3.js"
+    "static/js/main.e0bfca05.js"
   ]
 }
