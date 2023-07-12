@@ -34,3 +34,9 @@ body {
 .column {
     flex-direction: column;
 }
+
+.grid {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}

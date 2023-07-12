@@ -10,10 +10,20 @@ function Admin() {
         <>
             <Titulo title='Panel de administración' img={lider} />
 
-            <form className={form.formAgregar + ' flex'}>
-                <label for='agregarUsuario'>Agregar usuario:</label>
-                <input type='text' id='agregarUsuario' placeholder='Teléfono'/>
+            <form className={form.formAdmin + ' grid'}>
+                <label for='agregar'>Agregar miembro</label>
+                <div>
+                    <input type='number' id='agregar' placeholder='Teléfono' name='telefono' />
+                    <input type='text' placeholder='Nombre' name='nombre' />
+                </div>
                 <button type='submit' className={button.botonAzul}>Agregar</button>
+            </form>
+            <form className={form.formAdmin + ' grid'}>
+                <label for="expulsar">Expulsar miembro</label>
+                <select id="expulsar">
+                    <option disabled selected>Seleccionar miembro</option>
+                </select>
+                <button type="submit" className={button.botonAzul}>Expulsar</button>
             </form>
         </>
     )

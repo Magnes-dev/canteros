@@ -9,7 +9,7 @@ function Home() {
         <>
             <Titulo img={eye} title='Bienvenido a la APP de los canteros' />
 
-            <h2>Próximo evento:</h2>
+            <h3>Próximo evento:</h3>
 
             <Evento />
 

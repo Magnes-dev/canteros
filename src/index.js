@@ -6,6 +6,7 @@ import Home from './pages/home';
 import NotFound from './pages/notFound';
 import Eventos from './pages/eventos';
 import Admin from './pages/admin';
+import Base from './pages/base';
 import './styles/app.css';
 
 export default function App() {
@@ -16,6 +17,7 @@ export default function App() {
           <Route index element={<Home />} />
           <Route path='eventos' element={<Eventos />} />
           <Route path='admin' element ={<Admin />} />
+          <Route path='base' element={<Base />} />
           <Route path="*" element={<NotFound />} />
         </Route>
       </Routes>

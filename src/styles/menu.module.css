@@ -1,0 +1,26 @@
+.menu {
+    position: absolute;
+    left: 1em;
+    background-color: var(--morado-cantero);
+    color: var(--amarillo-cantero);
+    text-shadow: 1px 1px black;
+    border-radius: 25px 15px 40px 10px;
+    box-shadow: inset 0px 0px 30px var(--marron-cantero);
+}
+
+.menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu ul li {
+    padding: 1em;
+    min-width: calc(100vw - 1.5em);
+    font-size: 1.2em;
+    border-bottom: 1px solid var(--marron-cantero);
+}
+
+.menu ul li:last-child {
+    border: none;
+}
