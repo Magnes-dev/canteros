@@ -1,25 +1,25 @@
 {
   "files": {
-    "main.css": "/canteros/static/css/main.9f7ae868.css",
-    "main.js": "/canteros/static/js/main.c7dcbf16.js",
-    "static/media/logia.png": "/canteros/static/media/logia.8cf4afee4a7b3384e5dd.png",
-    "static/media/eye.png": "/canteros/static/media/eye.96d22bfcb96b57f149d5.png",
-    "static/media/money-pool.png": "/canteros/static/media/money-pool.1d8589f17ad2a823257a.png",
-    "static/media/fish.png": "/canteros/static/media/fish.10a44e5c70d35050d593.png",
-    "static/media/table.png": "/canteros/static/media/table.e32fdfca3db28ed9be88.png",
-    "static/media/canteros-logo.png": "/canteros/static/media/canteros-logo.1430c6af220c33a1d872.png",
-    "static/media/chest2.png": "/canteros/static/media/chest2.a96d32cd5900e93e1102.png",
-    "static/media/clouds.webp": "/canteros/static/media/clouds.46baaac55e3cba20ff4e.webp",
-    "static/media/krusty.png": "/canteros/static/media/krusty.a6b38ec47968ff28f43b.png",
-    "static/media/pig.webp": "/canteros/static/media/pig.c08b04990b2b757a2b79.webp",
-    "static/media/lider.png": "/canteros/static/media/lider.7e88f6e7f34e79c5da27.png",
-    "static/media/homer.png": "/canteros/static/media/homer.febc30e66f7031aa70ba.png",
-    "index.html": "/canteros/index.html",
-    "main.9f7ae868.css.map": "/canteros/static/css/main.9f7ae868.css.map",
-    "main.c7dcbf16.js.map": "/canteros/static/js/main.c7dcbf16.js.map"
+    "main.css": "./static/css/main.31fff4ff.css",
+    "main.js": "./static/js/main.0803fb0e.js",
+    "static/media/logia.png": "./static/media/logia.8cf4afee4a7b3384e5dd.png",
+    "static/media/eye.png": "./static/media/eye.96d22bfcb96b57f149d5.png",
+    "static/media/money-pool.png": "./static/media/money-pool.1d8589f17ad2a823257a.png",
+    "static/media/fish.png": "./static/media/fish.10a44e5c70d35050d593.png",
+    "static/media/table.png": "./static/media/table.e32fdfca3db28ed9be88.png",
+    "static/media/canteros-logo.png": "./static/media/canteros-logo.1430c6af220c33a1d872.png",
+    "static/media/chest2.png": "./static/media/chest2.a96d32cd5900e93e1102.png",
+    "static/media/clouds.webp": "./static/media/clouds.46baaac55e3cba20ff4e.webp",
+    "static/media/krusty.png": "./static/media/krusty.a6b38ec47968ff28f43b.png",
+    "static/media/pig.webp": "./static/media/pig.c08b04990b2b757a2b79.webp",
+    "static/media/lider.png": "./static/media/lider.7e88f6e7f34e79c5da27.png",
+    "static/media/homer.png": "./static/media/homer.febc30e66f7031aa70ba.png",
+    "index.html": "./index.html",
+    "main.31fff4ff.css.map": "./static/css/main.31fff4ff.css.map",
+    "main.0803fb0e.js.map": "./static/js/main.0803fb0e.js.map"
   },
   "entrypoints": [
-    "static/css/main.9f7ae868.css",
-    "static/js/main.c7dcbf16.js"
+    "static/css/main.31fff4ff.css",
+    "static/js/main.0803fb0e.js"
   ]
 }
