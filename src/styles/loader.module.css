@@ -1,0 +1,14 @@
+.loader {
+    width: 3em;
+    height: 3em;
+    border:  .5em solid var(--azul-cantero);
+    border-top: .5em solid var(--amarillo-cantero);
+    border-radius: 50%;
+    animation: spin .5s linear infinite;
+    margin: auto;
+}
+
+@keyframes spin {
+    0% {transform: rotate(0deg);}
+    100% {transform: rotate(360deg);}
+}

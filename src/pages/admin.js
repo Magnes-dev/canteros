@@ -11,7 +11,7 @@ function Admin() {
             <Titulo title='Panel de administración' img={lider} />
 
             <form className={form.formAdmin + ' grid'}>
-                <label for='agregar'>Agregar miembro</label>
+                <label htmlFor='agregar'>Agregar miembro</label>
                 <div>
                     <input type='number' id='agregar' placeholder='Teléfono' name='telefono' />
                     <input type='text' placeholder='Nombre' name='nombre' />
@@ -19,9 +19,9 @@ function Admin() {
                 <button type='submit' className={button.botonAzul}>Agregar</button>
             </form>
             <form className={form.formAdmin + ' grid'}>
-                <label for="expulsar">Expulsar miembro</label>
-                <select id="expulsar">
-                    <option disabled selected>Seleccionar miembro</option>
+                <label htmlFor="expulsar">Expulsar miembro</label>
+                <select id="expulsar" defaultValue="0">
+                    <option disabled value="0">Seleccionar miembro</option>
                 </select>
                 <button type="submit" className={button.botonAzul}>Expulsar</button>
             </form>

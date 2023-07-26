@@ -1,28 +1,32 @@
-import React from 'react';
-import styles from '../styles/proximo-evento.module.css';
+import {ReactComponentElement, useEffect, useState} from 'react';
+import styles from '../styles/evento.module.css';
 import button from '../styles/buttons.module.css';
 
-function Evento() {
+function Evento(props) {
+
+    const Apuntarme = () => {
+        const eventId = {_id: props.data._id};
+        //ID del usuario
+        
+        useEffect(() => {
+            const run = async () => {
+                const query = await fetch('http://localhost:3001', {
+                method: 'POST',
+                headers: {"Content-Type": "application/json"},
+                body: {}
+                });
+            }
+    
+        })
+    }
+
     return (
-        <div className="flex column">
-            <table className={styles.evento}>
-                <tbody>
-                    <tr>
-                        <td>El <span id='fecha'>10/10/2025</span> a las <span id='hora'>19:00</span></td>
-                    </tr>
-                    <tr>
-                        <td>
-                            Lorem ipsum dolor sit amet dolor sit velit elitr sed diam consequat dolore duis stet invidunt ut.
-                            Et eu labore invidunt erat labore stet sed ipsum duo accumsan lorem et consequat lorem iriure eros hendrerit.
-                            Lorem ipsum dolor sit amet tempor sed dolore consetetur stet sea ipsum voluptua lorem lorem lorem. No stet minim feugait kasd doming. Ut elitr vero justo lorem. Elitr et et et nam. Clita gubergren accumsan nonumy. Volutpat dolore in voluptua eos labore duo molestie. Elitr erat nonumy amet eirmod.
-                        </td>
-                    </tr>
-                    <tr>
-                        <td><span>1</span> miembros asisten</td>
-                    </tr>
-                </tbody>
-            </table>
-            <button type="button" className={button.botonAzul}>Apuntarme</button>
+        <div className={styles.evento + " flex column"}>
+            <p>El <span id='date'>{props.data.date}</span> a las <span id='time'>{props.data.time}</span></p>
+            <p>{props.data.message}</p>
+            <p><span>{props.data.members.length}</span> miembros asisten</p>
+
+            <button type="button" className={button.botonAzul} onClick={Apuntarme()}>Apuntarme</button>
         </div>
     )
 }
