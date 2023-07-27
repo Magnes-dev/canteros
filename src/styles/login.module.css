@@ -1,0 +1,21 @@
+.login {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(34,68,119,.9);
+    z-index: 10;
+}
+
+.loginForm label {
+    color: var(--amarillo-cantero);
+    font-size: 1.6em;
+    text-shadow: 2px 2px black;
+}
+
+.loginForm input {
+    font-size: 1.2em;
+    padding: .5em;
+    margin: 1em auto;
+    border-radius: 5px;
+    border: none;
+}

@@ -3,6 +3,7 @@ import eye from '../img/eye.png';
 import Loader from '../components/loader';
 import Evento from '../components/evento';
 import Titulo from '../components/titulo';
+import Login from '../components/login';
 import button from '../styles/buttons.module.css';
 
 function Home() {
@@ -39,8 +40,6 @@ function Home() {
 
         buscar();
     }, []);
-
-    console.log(data);
 
     return (
         <>
