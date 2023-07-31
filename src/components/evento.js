@@ -1,23 +1,25 @@
-import {ReactComponentElement, useEffect, useState} from 'react';
+import { useEffect, useState} from 'react';
 import styles from '../styles/evento.module.css';
 import button from '../styles/buttons.module.css';
 
 function Evento(props) {
+    //No funciona
+    const userId = document.cookie.id;
+    const eventId = {_id: props.data._id};
+
+    useEffect(() => {
+        const run = async () => {
+            const query = await fetch('http://localhost:3001/select', {
+            method: 'POST',
+            headers: {"Content-Type": "application/json"},
+            body: {}
+            });
+        }
+
+    })
 
     const Apuntarme = () => {
-        const eventId = {_id: props.data._id};
-        //ID del usuario
         
-        useEffect(() => {
-            const run = async () => {
-                const query = await fetch('http://localhost:3001', {
-                method: 'POST',
-                headers: {"Content-Type": "application/json"},
-                body: {}
-                });
-            }
-    
-        })
     }
 
     return (

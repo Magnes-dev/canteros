@@ -3,11 +3,10 @@ import eye from '../img/eye.png';
 import Loader from '../components/loader';
 import Evento from '../components/evento';
 import Titulo from '../components/titulo';
-import Login from '../components/login';
 import button from '../styles/buttons.module.css';
 
 function Home() {
-    const [data, setData] = useState();
+    const [data, setData] = useState(null);
     const [load, setLoad] = useState(false);
 
     useEffect(() => {
@@ -19,7 +18,7 @@ function Home() {
         const buscar = async () => {
             try {
                 await fetch('http://localhost:3001/select', {
-                    method: 'post',
+                    method: 'POST',
                     headers: {
                         "Content-Type": "application/json"
                     },
