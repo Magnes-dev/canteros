@@ -1,26 +1,14 @@
 import { useEffect, useState} from 'react';
 import styles from '../styles/evento.module.css';
-import button from '../styles/buttons.module.css';
+import Cookies from '../classes/cookies';
+import BotonApuntarme from '../components/botonApuntarme';
 
 function Evento(props) {
-    //No funciona
-    const userId = document.cookie.id;
-    const eventId = {_id: props.data._id};
+    const cookies = new Cookies(document.cookie);
+    const cookieValues = cookies.data();
 
-    useEffect(() => {
-        const run = async () => {
-            const query = await fetch('http://localhost:3001/select', {
-            method: 'POST',
-            headers: {"Content-Type": "application/json"},
-            body: {}
-            });
-        }
-
-    })
-
-    const Apuntarme = () => {
-        
-    }
+    const userId = cookieValues.id;
+    const eventId = props.data._id;
 
     return (
         <div className={styles.evento + " flex column"}>
@@ -28,7 +16,7 @@ function Evento(props) {
             <p>{props.data.message}</p>
             <p><span>{props.data.members.length}</span> miembros asisten</p>
 
-            <button type="button" className={button.botonAzul} onClick={Apuntarme()}>Apuntarme</button>
+            <BotonApuntarme userId={userId} eventId={eventId} />
         </div>
     )
 }
