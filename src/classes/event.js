@@ -1,42 +1,27 @@
 class Event {
-    constructor(date, time, message, members) {
+    constructor(date, time, message, winner = 'Por determinar', members) {
         this.date = date;
         this.time = time;
         this.message = message;
+        this.winner = winner;
         this.members = members;
     }
 
-    getDate = () => {
-        return this.date;
-    }
+    getDate = () => this.date;
 
-    getTime = () => {
-        return this.time;
-    }
+    getTime = () => this.time;
 
-    getMessage = () => {
-        return this.message;
-    }
+    getMessage = () => this.message;
 
-    getMembers = () => {
-        return this.members;
-    }
+    getMembers = () => this.members;
 
-    setDate = (date) => {
-        this.date = date;
-    }
+    setDate = (date) => this.date = date;
 
-    setTime = (time) => {
-        this.time = time;
-    }
+    setTime = (time) => this.time = time;
 
-    setMessage = (message) => {
-        this.message = message;
-    }
+    setMessage = (message) => this.message = message;
 
-    addMember = (id) => {
-        this.members.push(id);
-    }
+    addMember = (id) => this.members.push(id);
 
     removeMember = (id) => {
         const idx = this.members.indexOf(id);

@@ -1,9 +1,10 @@
-import { React, useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import eye from '../img/eye.png';
 import Loader from '../components/loader';
 import Evento from '../components/evento';
 import Titulo from '../components/titulo';
 import button from '../styles/buttons.module.css';
+import Fetch from '../classes/fetch';
 
 function Home() {
     const [data, setData] = useState(null);
@@ -15,29 +16,14 @@ function Home() {
             data: {}
         }
 
-        const buscar = async () => {
-            try {
-                await fetch('http://localhost:3001/select', {
-                    method: 'POST',
-                    headers: {
-                        "Content-Type": "application/json"
-                    },
-                    body: JSON.stringify(body)
-                })
-                    .then((response) => {
-                        return response.json();
-                    })
-                    .then((data) => {
-                        setData(data);
-                        setLoad(true);
-                    })
+        const fetch = new Fetch('select', body);
+        const response = fetch.run();
 
-            } catch (e) {
-                console.log(e);
-            }
-        }
+        response.then((data) => {
+            setData(data);
+            setLoad(true);
+        });
 
-        buscar();
     }, []);
 
     return (

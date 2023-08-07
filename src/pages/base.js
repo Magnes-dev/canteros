@@ -28,7 +28,7 @@ function Base() {
             desc='Contamos con una piscina en la que remojarnos mientras tomamos unas birras cuando hace calor.' />
 
             <DescripcionDerecha img={fish} alt='Pez de tres ojos' 
-            desc='Aunque cuando está muy concurrida, el agua se pone lechosa...' />
+            desc='Aunque cuando está muy concurrida, el agua se pone turbia...' />
         </>
     )
 }

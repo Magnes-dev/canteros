@@ -4,13 +4,10 @@ class Message {
         this.message = message;
     }
 
-    getUserId = () => {
-        return this.userId;
-    }
+    getUserId = () => this.userId;
 
-    getMessage = () => {
-        return this.message;
-    }
+    getMessage = () => this.message;
+    
 }
 
 export default Message;

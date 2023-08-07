@@ -1,0 +1,23 @@
+.votacion {
+    gap: 1em;
+    width: 100vw;
+}
+
+.votacion select {
+    font-size: 1.2em;
+    padding: .5em;
+    border: none;
+    background-color: transparent;
+    border: 1px solid var(--azul-cantero);
+    border-radius: 10px;
+    color: var(--azul-cantero);
+}
+
+#jarra {
+    max-height: 2.5em;
+}
+
+#avatar {
+    max-height: 5em;
+    padding: .4em;
+}

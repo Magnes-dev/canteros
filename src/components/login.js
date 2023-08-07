@@ -2,6 +2,7 @@ import { React, useState, useEffect } from 'react';
 import Cookie from 'universal-cookie';
 import styles from '../styles/login.module.css';
 import button from '../styles/buttons.module.css';
+import Fetch from '../classes/fetch';
 
 function Login() {
     const [telf, setTelf] = useState(0);
@@ -11,32 +12,25 @@ function Login() {
 
     useEffect(() => {
         if (telf) {
-            const run = async () => {
-                await fetch('http://localhost:3001/select', {
-                    method: 'POST',
-                    headers: { 'Content-Type': 'application/json' },
-                    body: JSON.stringify({
-                        collection: 'user',
-                        data: { telf: telf }
-                    })
-                })
-                    .then((response) => {
-                        return response.json();
-                    })
-                    .then((data) => {
-                        if (data.hasOwnProperty('name')) {
-                            login.style.display = 'none';
-                            const cookie = new Cookie();
-                            cookie.set('name', data.name, { path: '/', maxAge: 365 * 24 * 60 * 60 * 60 });
-                            cookie.set('id', data._id, { path: '/', maxAge: 365 * 24 * 60 * 60 * 60 });
-                        } else {
-                            errorText.textContent = data.msg;
-                            errorDiv.classList.add('flex');
-                        }
-                    });
+            const body = {
+                collection: 'user',
+                data: { telf: telf }
             }
 
-            run();
+            const fetch = new Fetch('select', body);
+            const response = fetch.run();
+
+            response.then((data) => {
+                if (data.hasOwnProperty('name')) {
+                    login.style.display = 'none';
+                    const cookie = new Cookie();
+                    cookie.set('name', data.name, { path: '/', maxAge: 365 * 24 * 60 * 60 * 60 });
+                    cookie.set('id', data._id, { path: '/', maxAge: 365 * 24 * 60 * 60 * 60 });
+                } else {
+                    errorText.textContent = data.msg;
+                    errorDiv.classList.add('flex');
+                }
+            });
         }
 
     }, [telf, login, errorDiv, errorText]);

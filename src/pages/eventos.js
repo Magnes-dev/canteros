@@ -3,6 +3,7 @@ import Titulo from '../components/titulo';
 import krusty from '../img/krusty.png';
 import Evento from '../components/evento';
 import Loader from '../components/loader';
+import Fetch from '../classes/fetch';
 
 
 function Eventos() {
@@ -15,29 +16,15 @@ function Eventos() {
             data: {}
         }
 
-        const buscar = async () => {
-            try {
-                await fetch('http://localhost:3001/selectMulti', {
-                    method: 'POST',
-                    headers: {
-                        "Content-Type": "application/json"
-                    },
-                    body: JSON.stringify(body)
-                })
-                    .then((response) => {
-                        return response.json();
-                    })
-                    .then((data) => {
-                        setData(data);
-                        setLoad(true);
-                    })
+        const fetch = new Fetch('selectMulti', body);
+        const response = fetch.run();
 
-            } catch (e) {
-                console.log(e);
-            }
+        response.then((data) => {
+            setData(data);
+            setLoad(true);
         }
+        );
 
-        buscar();
     }, []);
 
     return (
@@ -47,7 +34,7 @@ function Eventos() {
             {!load && <Loader />}
 
             {load && data.map((e) => {
-                return <Evento data={e} key={e._id}/>
+                return <Evento data={e} key={e._id} />
             })}
 
         </>

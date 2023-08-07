@@ -4,21 +4,13 @@ class User {
         this.telf = telf;
     }
 
-    getName = () => {
-        return this.name;
-    }
+    getName = () => this.name;
 
-    getTelf = () => {
-        return this.telf;
-    }
+    getTelf = () => this.telf;
 
-    setName = (name) => {
-        this.name = name;
-    }
+    setName = (name) => this.name = name;
 
-    setTelf = (telf) => {
-        this.telf = telf;
-    }
+    setTelf = (telf) => this.telf = telf;
  }
 
  export default User;
